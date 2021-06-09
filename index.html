@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Terraza Gastronomica</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<style type="text/css">
+		@font-face {
+		    font-family: Miso;
+		    font-weight: bold;
+		    src: url("https://res.cloudinary.com/kheperioclud/raw/upload/v1623171176/city/miso-bold_yotbcw.otf") format("opentype");
+		}
+		.bg-light {background-color: #44c8f5!important;}
+		.nav-link {
+			color: #132e55;
+			text-transform:uppercase;
+			font-weight: 700;
+			font-family: Miso;
+			font-size: 18px;
+			padding: .2rem 0.6rem;
+		}
+
+		.border-r{
+			border-right: solid;
+		}
+		.navbar {
+		    padding-top: 2rem !important;
+		    padding-bottom: 2rem !important;
+		}
+		#page-content{
+			background-image: url("https://res.cloudinary.com/kheperioclud/image/upload/v1623172037/city/fondo_texturaterraza_xpzmkx.png");
+			background-repeat: repeat;
+			background-size: cover;
+		}
+
+		.logo{
+			 /*background-image: url(https://res.cloudinary.com/kheperioclud/image/upload/v1623172037/city/6terraza_gwepf3.png), url(https://res.cloudinary.com/kheperioclud/image/upload/v1623172031/city/3terraza_ajlanb.png);*/
+			  background-position: left bottom, right top;
+			  background-repeat: no-repeat, no-repeat;
+			  background-size: contain, contain;
+		}
+
+		.city-logo{
+			transform: translateY(100px);
+
+		}
+
+		.w-25 {
+		    width: 35%!important;
+		    margin-top: 147px !important;
+
+		}
+
+		p{
+			color:#132e55;
+			font-family: Miso;
+			text-align: center;
+			font-size: 21px;
+		}
+
+		#blue{
+			margin: 4rem 0;
+			color: inherit;
+			background-color: #44c8f5;
+			border: 0;
+			opacity: 2.25;
+			height: 2px;
+			width: 50px;
+		}
+
+		h2{
+			text-align: center;
+			color: #132e55;
+			font-family: Miso;
+		}
+
+		#trigo1{
+			width: 14%;
+    		transform: translate(159px,-200px);
+
+    		max-height: 100px;
+		}
+
+		#trigo2{
+			width: 20%;
+			transform: translateY(-330px);
+
+			max-height: 100px;
+		}
+
+		#mesas{
+			width: 700px;
+    		height: 428px;
+			transform: translate(103px,-39px);
+
+
+		}
+		
+		h3{
+			font-family: Miso;
+			font-size: 1.8rem;
+			margin-top: 20px;
+			color: #132e55;
+		}
+
+		h1{
+			font-family: Miso;
+		}
+
+		.l-blue{
+			color: #44c8f5;
+			letter-spacing: 7px;
+			text-align: left;
+		}
+
+		/* --------------------------------------------------*/
+		/*    Propuesta gastronomica
+		-------------------------------------------------------
+		------------------------------------------------------
+		*/
+		.l-blue-h1{
+			color: #44c8f5;
+			letter-spacing: 10px;
+			font-size: 60px;
+		}
+
+		#gamba{
+			width: 20%;
+			transform: translate(-60px,-101px);
+
+			max-height: 100px;
+
+		}
+		#garlic{
+			width: 20%;
+			transform: translate(80px,155px);
+
+			max-height: 100px;
+
+		}
+
+		h4{
+			text-align: center;
+			font-family: Miso;
+		}
+		#restaurantes{
+			margin-top:60px;
+		}
+		#restaurante1{
+			width: 38%;
+			max-height: 100px;
+		}
+		#restaurante2{
+			width: 60%;
+			max-height: 100px;
+		}
+		#restaurante3{
+			margin-top: 15%;
+		    width: 52%;
+		    height: 44%;
+		    max-height: 100px;
+		}
+		#restaurante4{
+			margin-top: 15%;
+		    width: 25%;
+		    height: 25%;
+		    max-height: 100px;
+		}
+		#restaurante5{
+			margin-top: 15%;
+		    width: 30%;
+		    max-height: 100px;
+		}
+		.button-blue{
+			background-color:#44c8f5;
+			color:#132e55;
+			padding: 12px 50px 12px 50px;
+			font-family: Miso;
+			font-size: 25px;
+			margin-top: 50px;
+			text-decoration: none;
+			height: 10%;
+		}
+		.button-blue-whats{
+			background-color:#44c8f5;
+			color:#132e55;
+			padding: 6px 50px;
+			font-family: Miso;
+			font-size: 25px;
+			text-decoration: none;
+			margin-bottom: 50px;
+		}
+		.button-blue:hover{
+			text-decoration: none;
+			color: white;
+		}
+		#maple{
+			width: 13%;
+			height: 13%;
+			max-height: 100px;
+		}
+		@media only screen and (max-width: 1440px){
+			#bread{ 
+
+			width: 17%;
+			transform: translate(30%, -142px);
+
+			max-height: 100px;
+			}
+		}
+		@media only screen and (min-width: 1441px){
+			#bread{ 
+			width: 17%;
+			transform: translate(100%, -142px);
+
+			max-height: 100px;
+			}
+		}
+
+		/*-----------------------------------------
+		------------------------------
+		---------chefs---------------
+		--------------------------*/
+
+		#chefs{
+			background-image: url("https://res.cloudinary.com/kheperioclud/image/upload/v1623172033/city/10terraza_svivl1.png");
+			background-position: left bottom;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#sub-c-image{
+			width: 12%;
+			transform: translate(100px, 100px);
+
+		}
+
+	/* ---------------------------------
+	------------------ubicacion ---------------
+	-----------------------------------------*/
+
+		#ubicacion{
+			margin-top: 60px;
+		}
+
+		#copa{
+			transform: translateY(-160px);
+
+		}
+		#map-city{
+			margin-bottom: 50px;
+		}
+		/*end ubicacion */
+		/*faqs */
+		#faqs h2{
+			font-size: 45px;
+			color: #44c8f5;
+		}
+		#faqs p{
+			text-align: left;
+		}
+		#faqs .question{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		#faqs{
+			position: relative;
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+		#faq-trigo, #faq-pan{
+			position: absolute;
+			display: block;
+		}
+		#faq-trigo{
+			right: 0;
+			top: 15%;
+			max-width: 250px;
+		}
+		#faq-pan{
+			left: 0;
+			bottom: 15%;
+			max-width: 150px;
+		}
+		/*end faqs*/
+		/*lateral menu*/
+		.socials{
+			position: fixed;
+			left: 0;
+			top: 50%;
+			background-color: #44c8f5;
+			border-top-right-radius: 35px;
+			border-bottom-right-radius: 35px;
+			padding: 15px;
+			z-index: 999999999;
+		}
+		.socials a{
+			display: block;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+		.socials img{
+			max-width: 25px;
+			height: 25px;
+		}
+		/*end lateral menu*/
+		
+	</style>
+</head>
+<body>
+	<div class="socials text-center">
+		<a href="https://www.facebook.com/ExperienciaPLUS/">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172035/city/fterraza_zrc9kz.png" class="img-social" id="" alt="">
+		</a>
+		<a href="https://www.instagram.com/experienciaplus/">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172035/city/iterraza_xaq2wj.png" class="img-social" id="" alt="">
+		</a>
+		<a href="https://twitter.com/plus_ex?lang=es">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/tterraza_njlazs.png" class="img-social" id="" alt="">
+		</a>
+	</div>
+	<nav class="navbar navbar-light bg-light">
+ 		<div class="container d-flex justify-content-center">
+			<ul class="nav d-flex justify-content-center">
+			  <li class="nav-item border-r">
+	 			<a class="nav-link active" href="#">Home</a>
+		 	  </li>
+			  <li class="nav-item border-r">
+			    <a class="nav-link" href="#">Horarios</a>
+			  </li>
+			  <li class="nav-item border-r">
+			    <a class="nav-link" href="#">Propuesta Gastronomica</a>
+			  </li>
+			  <li class="nav-item border-r">
+			    <a class="nav-link" href="#">CHEFS INVITADOS</a>
+			  </li>
+			  <li class="nav-item border-r">
+			    <a class="nav-link" href="#">UBICACIÓN</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">FAQ'S</a>
+			  </li>
+			</ul>
+  		</div>
+	</nav>
+	<section id="page-content">
+		<div class="container-fluid logo">
+			<div class="container-fluid d-flex justify-content-center city-logo">
+				<div class="row">
+					<div class="col-12 col-sm-10 col-md-8 col-lg-7 mx-auto text-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/terrazaterraza_zjmhcp.png" class="w-50" margin-top = "20px">
+				<p>
+					Los espacios abiertos se han convertido en un punto clave en la reapertura de los restaurantes, es por eso que Terraza Gastronómica por Citibanamex llega a uno de los lugares más icónicos de la Ciudad de México: Campo Marte.
+				</p>
+				<p>
+					Terraza Gastronómica por Citibanamex es una iniciativa para disfrutar de increíbles proyectos gastronómicos, música y cultura al aire libre.
+				</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container w-15 d-flex justify-content-center">
+			<hr id= "blue">			
+		</div>
+		
+		<div class="container">
+			<h2>10 DE JUNIO</h2>
+			<h2>AL 5 DE SEPTIEMBRE</h2>
+			<!-- <img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623176344/city/17_1terraza_o2bsjs.png" id = "trigo1"> -->
+		</div>
+		<div class="container-fluid d-flex">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-8">
+						<h2 class = "l-blue">HORARIOS</h2>
+						<h3>Jueves<br>7:00 pm a 12:00 am</h3>
+						<h3>Viernes y Sábado<br>7:00 pm a 12:00 am</h3>
+						<h3>Domingo<br>12:30 pm a 6:30 am</h3>
+					</div>					
+				</div>
+			
+			</div>
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172038/city/12terraza_qwdf95.png" id = "mesas"> 			
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623176348/city/11terraza_ftgkvw.png" id = "trigo2">
+		</div>
+		<div class="container-fluid">
+			<div class="container d-flex">
+				<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172032/city/9terraza_qwbgf5.png" id = "gamba">
+				<h1 class ="l-blue-h1">PROPUESTA GASTRONOMINCA</h1>
+				<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172032/city/8terraza_yibl69.png" id = "garlic">
+			</div>
+			<div class="container">
+				<h2>10 DE JUNIO</h2>
+				<h2>AL 5 DE SEPTIEMBRE</h2>
+				<h4 class="big">Se contará con la propuesta gastronómica de 5 de los<br> mejores restaurantes de la Ciudad de México.</h4>
+			</div>
+			<div class="container" id = "restaurantes">
+				<div class="row">
+					<div class="col-sm-4 d-flex justify-content-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172034/city/bysterraza_hfiukj.png" id="restaurante1">
+					</div>
+					<div class="col-sm-4 d-flex justify-content-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172029/city/santoterraza_z9pvno.png" id="restaurante2">
+					</div>
+					<div class="col-sm-4 d-flex justify-content-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172029/city/outerraza_k9hk1t.png" id="restaurante3">
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-sm-6 d-flex justify-content-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172029/city/roxterraza_euy5aq.png" id="restaurante4">
+					</div>
+					<div class="col-sm-6 d-flex justify-content-center">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172029/city/piterraza_n8l5fh.png" id="restaurante5">
+					</div>					
+				</div>
+				<div class="d-flex justify-content-between">
+					<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172033/city/13terraza_o15pim.png" id="maple">
+					<a href="" class="button-blue">Consulta el menú aquí</a>
+					<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172036/city/18terraza_nrh5li.png" id="bread">
+				</div>				
+			</div>
+		</div>
+		<div class="container-fluid" id = "chefs">
+			<h1 style="text-align:center;" class="l-blue-h1">CHEFS INVITADOS</h1>
+			<div class="container-fluid">
+				<p style="text-align: left; margin-left: 40%; margin-top: 30px;">
+					Los principales chefs y proyectos gastronómicos de México <br>curan de forma temporal esta área de la Terraza<br> Gastronómica.
+				</p>
+				<div class="row">
+					<div class="col-8 d-flex justify-content-center">
+						<p style="text-align: left; margin-left: 40%; margin-top: 30px;">
+							Chef Invitado: <blue-p style="color:#44c8f5">Nombre</blue-p><br>
+							del 10 al 13 de Junio.<br>
+							Grill and Crudo Bar bu Yoru.
+						</p>
+					</div>
+					<div class="col-4">
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/terrazaterraza_zjmhcp.png" width="150px" height="150px">
+					</div>					
+				</div>
+				<div class="row d-none">
+					<div class="col-4"> 
+						<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/terrazaterraza_zjmhcp.png" width="100px" height="100px">
+					</div>
+					<div class="col-8 d-flex justify-content-center">
+						<p style="text-align: left; margin-left: 40%; margin-top: 30px;">
+							Chef Invitado: <blue-p style="color:#44c8f5">Nombre</blue-p><br>
+							del 10 al 13 de Junio.<br>
+							Grill and Crudo Bar bu Yoru.
+						</p>
+					</div>					
+				</div>
+
+			</div>
+		</div>
+		<div class="conainer-fluid" id ="sub-chefs">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172034/city/16terraza_whdavg.png" width="10%" id = "sub-c-image">
+			<p>
+				Para reservar una mesa dentro de la terraza de chefs invitados puedes <br>hacerlo a través de nuestro Concierge Online
+			</p>
+			<div class="d-flex justify-content-center">
+				<a href = "https://api.whatsapp.com/send?phone=525585670756&text=¡Hola!%2C%20Quisiera%20más%20información..." class="button-blue-whats">Aquí</a>
+			</div>
+		</div>
+	</section>
+	<!-- FAQs -->
+	<section id="faqs" data-aos="zoom-in-down" data-aos-duration="300">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623191616/city/20terraza_mwhsxq.png" class="img-fluid" id="faq-trigo" alt="">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623191616/city/19terraza_n2jzdi.png" class="img-fluid" id="faq-pan" alt="">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-11 col-sm-10 col-md-9 col-lg-8 mx-auto">
+					<h2 data-aos="fade-up" data-aos-duration="300" class="text-center text-uppercase blue-light" >preguntas frecuentes</h2>
+					<p class="question">¿El acceso a la Terraza tiene costo de entrada?</p>
+					<p class="answer">El acceso es libre, sin costo de entrada. </p>
+					<p class="question">¿Cuentan con reservaciones?</p>
+					<p class="answer">Se manejarán reservaciones únicamente para la terraza de chefs invitados a través de nuestro concierge online en la línea de <a href="tel:5585670756">whatsapp  55 8567 0756</a>. De igual manera para los asistentes que se encuentren en el venue y deseen ingresar a esta zona de la terraza, podrán hacerlo siempre y cuando exista  disponibilidad de mesas.</p>
+					<p class="question">¿Qué pasa si llueve?</p>
+					<p class="answer">Tanto la Terraza de jardín y la de chefs invitados se encuentran techadas. Dado que el clima es un factor que no podemos controlar, en caso de lluvia será decisión del cliente si desea permanecer o retirarse del lugar.</p>
+					<p class="question">¿Se permite el acceso con alimentos y bebidas?</p>
+					<p class="answer">No permitimos el acceso con alimentos o bebidas. </p>
+					<p class="question">¿Puedo llevar a mi mascota?</p>
+					<p class="answer">Se permite el acceso de mascotas siempre y cuando porten su correa en todo momento y el asistente se haga cargo de limpiar sus necesidades.</p>
+					<p class="question">¿Cuentan con estacionamiento?</p>
+					<p class="answer">Contamos con estacionamiento con un costo de $50 pesos por día.</p>
+					<p class="question">¿Qué medidas de higiene y sana distancia se están manejando?</p>
+					<p class="answer">Contamos con todas las medidas especiales de seguridad, higiene y sana distancia.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end FAQS -->
+	<!-- ------------------------------------- -->
+	<!-- ------------------------------------- -->
+	<!-- footer -->
+	<footer>
+		<div class="container-fluid d-flex justify-content-between" id = "ubicacion">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172034/city/15terraza_mclihh.png" width="15%" height="25%">			
+			<div class="text-center">
+				<h1 class="l-blue-h1">UBICACIÓN</h1>
+				<p>
+					Casino Militar Campo Marte<br>
+					Bosque de Chapultepec I<br>
+					Secc. Miguel Hidalgo, 11000<br>
+					Ciudad de México, CDMX.
+				</p>
+				<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623194093/city/Mapa_Sitio-01_ejbsa3.png" id="map-city" class="w-50" alt="">
+			</div>
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172033/city/14terraza_zxe817.png" width="12%" height="15%" id ="copa">				
+
+		</div>
+		<div class="container-fluid d-flex justify-content-center">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172029/city/patrocinadores1terraza_ljnl4o.png" width="70%">
+		</div>
+		<div class="container-fluid d-flex justify-content-center">
+			<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/patrocinadores2terraza_lu2mpo.png" width="50%" style="margin-top: 100px;">
+		</div>
+		<div class="container-fluid d-flex justify-content-center">
+			<h2 style="margin-bottom: 100px; margin-top: 100px;">Todos los derechos reservados</h2>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  	AOS.init();
+</script>
+</html>
