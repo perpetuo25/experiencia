@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Terraza Gastronomica</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<style type="text/css">
+
+	/*Terraza citibanamex*/
+
+	@font-face {
+		font-family: Miso;
+		font-weight: bold;
+		src: url("https://res.cloudinary.com/kheperioclud/raw/upload/v1623171176/city/miso-bold_yotbcw.otf") format("opentype");
+	}
+	.bg-light {background-color: #44c8f5!important;}
+	.nav-link {
+		color: #132e55;
+		text-transform:uppercase;
+		font-weight: 700;
+		font-family: Miso;
+		font-size: 18px;
+		padding: .2rem 0.6rem;
+	}
+
+	.border-r{
+		border-right: solid;
+	}
+	.navbar {
+		padding-top: 2rem !important;
+		padding-bottom: 2rem !important;
+	}
+	#page-content{
+		background-image: url("https://res.cloudinary.com/kheperioclud/image/upload/v1623172037/city/fondo_texturaterraza_xpzmkx.png");
+		background-repeat: repeat;
+		background-size: cover;
+	}
+
+	.logo{
+		/*background-image: url(https://res.cloudinary.com/kheperioclud/image/upload/v1623172037/city/6terraza_gwepf3.png), url(https://res.cloudinary.com/kheperioclud/image/upload/v1623172031/city/3terraza_ajlanb.png);*/
+		background-position: left bottom, right top;
+		background-repeat: no-repeat, no-repeat;
+		background-size: contain, contain;
+	}
+
+	.city-logo{
+		transform: translateY(100px);
+
+	}
+
+	.w-25 {
+		width: 35%!important;
+		margin-top: 147px !important;
+
+	}
+
+	p{
+		color:#132e55;
+		font-family: Miso;
+		text-align: center;
+		font-size: 21px;
+	}
+
+	#blue{
+		margin: 4rem 0;
+		color: inherit;
+		background-color: #44c8f5;
+		border: 0;
+		opacity: 2.25;
+		height: 2px;
+		width: 50px;
+	}
+
+	h2{
+		text-align: center;
+		color: #132e55;
+		font-family: Miso;
+	}
+
+	#trigo1{
+		width: 14%;
+		transform: translate(159px,-200px);
+
+		max-height: 100px;
+	}
+
+	#trigo2{
+		width: 20%;
+		transform: translateY(-330px);
+		max-width: 100px;
+		opacity: 0.3;
+		max-height: auto;
+	}
+
+	#mesas{
+		width: 700px;
+		height: 428px;
+		transform: translate(103px,-39px);
+
+
+	}
+
+	h3{
+		font-family: Miso;
+		font-size: 1.8rem;
+		margin-top: 20px;
+		color: #132e55;
+	}
+
+	h1{
+		font-family: Miso;
+	}
+
+	.l-blue{
+		color: #44c8f5;
+		letter-spacing: 7px;
+		text-align: left;
+	}
+	/* --------------------------------------------------*/
+		/*    Propuesta gastronomica
+		-------------------------------------------------------
+		------------------------------------------------------
+		*/
+		.l-blue-h1{
+			color: #44c8f5;
+			letter-spacing: 10px;
+			font-size: 60px;
+		}
+		#gamba{
+			width: 20%;
+			max-width: 100px;
+			position: absolute;
+			left: 0;
+			top: -15%;
+			max-height: 100px;
+		}
+		#garlic{
+			width: 20%;
+			max-width: 100px;
+			position: absolute;
+			right: 0;
+			top: 15%;
+			max-height: 100px;
+
+		}
+
+		h4{
+			text-align: center;
+			font-family: Miso;
+		}
+		#restaurantes{
+			margin-top:60px;
+		}
+		#restaurante1{
+			width: 38%;
+			max-width: 100px;
+			max-height: auto;
+		}
+		#restaurante2{
+			width: 60%;
+			max-width:200px;
+			max-height: auto;
+		}
+		#restaurante3{
+			margin-top: 15%;
+			width: 52%;
+			height: 44%;
+			max-width: 150px;
+			max-height: auto;
+		}
+		#restaurante4{
+			margin-top: 15%;
+			width: 25%;
+			height: 25%;
+			max-width: 100px;
+			max-height: auto;
+		}
+		#restaurante5{
+			margin-top: 15%;
+			width: 30%;
+			max-width: 100px;
+			max-height: auto;
+		}
+		.button-blue{
+			background-color:#44c8f5;
+			color:#132e55;
+			padding: 12px 50px;
+			font-family: Miso;
+			font-size: 25px;
+			margin-top: 50px;
+			text-decoration: none;
+		}
+		.button-blue-whats{
+			background-color:#44c8f5;
+			color:#132e55;
+			padding: 6px 50px;
+			font-family: Miso;
+			font-size: 25px;
+			text-decoration: none;
+			margin-bottom: 50px;
+		}
+		.button-blue:hover{
+			text-decoration: none;
+			color: white;
+		}
+		#maple{
+			width: 13%;
+			height: 13%;
+			max-height: 100px;
+		}
+		@media only screen and (max-width: 1440px){
+			#bread{ 
+
+				width: 17%;
+				transform: translate(30%, -142px);
+
+				max-height: 100px;
+			}
+		}
+		@media only screen and (min-width: 1441px){
+			#bread{ 
+				width: 17%;
+				transform: translate(100%, -142px);
+
+				max-height: 100px;
+			}
+		}
+
+		/*-----------------------------------------
+		------------------------------
+		---------chefs---------------
+		--------------------------*/
+
+		#chefs{
+			background-image: url("https://res.cloudinary.com/kheperioclud/image/upload/v1623172033/city/10terraza_svivl1.png");
+			background-position: left bottom;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#chefs .btn-blue{
+			background-color: #44c8f5;
+			display: block;
+			color: #132e55;
+			text-decoration: none;
+			text-align: center;
+			padding: 15px 30px;
+			font-family: Miso;
+			margin: 0 auto;
+		}
+		@media (max-width 767.98px){
+			#chefs{
+				background-image: none;
+			}
+		}
+
+		#sub-c-image{
+			width: 12%;
+			transform: translate(100px, 100px);
+
+		}
+
+	/* ---------------------------------
+	------------------ubicacion ---------------
+	-----------------------------------------*/
+
+	#ubicacion{
+		margin-top: 60px;
+	}
+	#ubicacion a{
+		text-decoration: none;
+		transition: 0.5s ease all;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	#ubicacion a:hover{
+		font-weight: bold;
+		transition: 0.5s ease all;
+	}
+	#copa{
+		transform: translateY(-160px);
+
+	}
+	#map-city{
+		margin-bottom: 50px;
+	}
+	/*end ubicacion */
+	/*faqs */
+	#faqs h2{
+		font-size: 45px;
+		color: #44c8f5;
+	}
+	#faqs p{
+		text-align: left;
+	}
+	#faqs .question{
+		font-size: 24px;
+		font-weight: bolder;
+	}
+	#faqs .answer{
+		font-size: 17px;
+		font-weight: lighter;
+		opacity: 0.9;
+	}
+	#faqs{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#faq-trigo, #faq-pan{
+		position: absolute;
+		display: block;
+		opacity: 0.3;
+	}
+	#faq-trigo{
+		right: 0;
+		top: 15%;
+		max-width: 250px;
+	}
+	#faq-pan{
+		left: 0;
+		bottom: 15%;
+		max-width: 150px;
+	}
+	/*end faqs*/
+	/*lateral menu*/
+	.socials{
+		position: fixed;
+		left: 0;
+		top: 50%;
+		background-color: #44c8f5;
+		border-top-right-radius: 35px;
+		border-bottom-right-radius: 35px;
+		padding: 15px;
+		z-index: 999999999;
+	}
+	.socials a{
+		display: block;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.socials img{
+		max-width: 25px;
+		height: 25px;
+		z-index: 999999999999;
+		transition: 1s ease all;
+	}
+	.social img:hover{
+		transform: scale(1.2);
+	}
+	.img-social:hover{
+		transform: scale(1.2);
+		transition: 1s ease all;
+	}
+	/*end lateral menu*/
+	/*---------------------------*/
+	/*banner menus*/
+	#bannermenu{
+		position: relative;
+	}
+	#bannermenu #pizzabanner{
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 200px;
+		opacity: 0.5;
+	}
+	#bannermenu #panbanner{
+		position: absolute;
+		right: 0;
+		top: 5%;
+		max-width: 150px;
+		opacity: 0.5;
+	}
+	#bannermenu #shrimpbanner{
+		position: absolute;
+		left: 0;
+		bottom: 5%;
+		max-width: 100px;
+	}
+	#bannermenu #leafbanner{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		max-width: 100px;
+	}
+	#bannermenu #bannermenuimg{
+		max-width: 75%;
+		margin-top: 50px;
+		z-index: 999999999;
+	}
+	@media(max-width: 575.98px){
+		#bannermenu #bannermenuimg{
+
+		}
+		#bannermenu #pizzabanner{
+			position: absolute;
+			left: -15%;
+			top: -15%;
+			max-width: 150px;
+		}
+		#bannermenu #panbanner{
+			max-width: 50px;
+		}
+		#bannermenu #shrimpbanner{
+			max-width: 50px;
+		}
+		#bannermenu #leafbanner{
+			max-width: 50px;
+		}
+	}
+	/*end banner menus*/
+	/*---------------------------*/
+	/*garden menus*/
+	#gardenfood .accordion-body{
+		background-color: #ecebec;
+	}
+	/*end garden menus*/
+	/*footer*/
+	a: hover{
+		text-decoration: ;
+	}
+
+	.button-menu{
+         background-color: #44c8f5;
+         border-radius: 20%;
+         padding: 5px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: Miso;
+     }
+
+	 .menu-jardin-p{
+		background-color: #132e55;
+         border-radius: 20%;
+         padding: 5px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        
+        border-radius: 16px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Miso;
+	 }
+		/*end footer*/
+	</style>
+</head>
+<body>
+	<!-- nav  -->
+	<nav class="navbar navbar-light bg-light d-none">
+		<div class="container d-flex justify-content-center">
+			<ul class="nav d-flex justify-content-center">
+				<li class="nav-item border-r">
+					<a class="nav-link active" href="/">Home</a>
+				</li>
+				<li class="nav-item border-r">
+					<a class="nav-link" href="#hours">Horarios</a>
+				</li>
+				<li class="nav-item border-r">
+					<a class="nav-link" href="#propuesta">Propuesta Gastronomica</a>
+				</li>
+				<li class="nav-item border-r">
+					<a class="nav-link" href="#chefs">CHEFS INVITADOS</a>
+				</li>
+				<li class="nav-item border-r">
+					<a class="nav-link" href="#ubicacion">UBICACIÓN</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#faqs">FAQ'S</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end nav -->
+	<!-- ------------------------------------- -->
+	<!-- ------------------------------------- -->
+	<!-- banner menus -->
+	<section id="bannermenu">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172037/city/6terraza_gwepf3.png" id="pizzabanner" alt="terraza citibanamex">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172036/city/18terraza_nrh5li.png" alt="terraza citibanamex" id="panbanner">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172032/city/9terraza_qwbgf5.png" alt="terraza citibanamex" id="shrimpbanner">
+		<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623191616/city/20terraza_mwhsxq.png" alt="terraza citibanamex" id="leafbanner">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 col-8 mx-auto text-center">
+					<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/terrazaterraza_zjmhcp.png" class="img-fluid" id="bannermenuimg" alt="terraza citibanamex">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end banner menus -->
+
+	<!-- ------------------------------------- -->
+	<!-- ------------------------------------- -->
+	<section id = menu1>
+		<div class="container">
+			<div class="row w-100">
+				<div class="col-12">
+					<div class="d-flex justify-content-center ">
+						<p class="menu-jardin-p">Menu Jardín</p>
+					</div>
+					<div class="d-flex justify-content-center ">
+						<a class="button-menu" id = "alimentos">Alimentos</a>
+					</div>
+					<div class="d-flex justify-content-center" id="drinks">
+						<a class="button-menu" id= "drinks" >Bebidas</a>                
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- menus jardin -->
+	<section id="gardenfood" class="mt-5" style="display: none;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto">
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									Butcher & sons 
+								</button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206583/city/menus/TerrazaCB__Menus_-01_yfthoy.png" class="img-fluid" alt="terraza citibanamex Butcher & sons">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+									San-tŌ
+								</button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206584/city/menus/TerrazaCB__Menus_-02_zsrxxn.png" class="img-fluid" alt=" terraza citibanamex San-to">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+									Coma Pizza
+								</button>
+							</h2>
+							<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206584/city/menus/TerrazaCB__Menus_-03_tfsvnu.png" class="img-fluid" alt="terraza citibanamex coma pizza">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFour">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+									Ouzeria
+								</button>
+							</h2>
+							<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206583/city/menus/TerrazaCB__Menus_-05_kn4rg1.png" class="img-fluid" alt="terraza citibanamex ouzeria">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFive">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+									Neveria Roxy
+								</button>
+							</h2>
+							<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206583/city/menus/TerrazaCB__Menus_-04_jgua0w.png" class="img-fluid" alt="terraza citibanamex ouzeria">
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center ">
+                            <a class="button-menu" id = "regresar-food">Regresar</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end garden food -->
+
+	<!-- ------------------------------------- -->
+	<!-- ------------------------------------- -->
+	<!-- garden drinks -->
+	<section id="gardendrinks" style="display: none;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto">
+					<div class="accordion accordion-flush" id="accordionFlushExample2">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne2">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+									Cerveza
+								</button>
+							</h2>
+							<div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206571/city/menus/TerrazaCB__Bebidas_-01_tvsukk.png" class="img-fluid" alt="terraza citibanamex Butcher & sons">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo2">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
+									coctelería
+								</button>
+							</h2>
+							<div id="flush-collapseTwo2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo2" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206572/city/menus/TerrazaCB__Bebidas_-04_cmaqvn.png" class="img-fluid" alt=" terraza citibanamex San-to">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree2">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+									Destilados
+								</button>
+							</h2>
+							<div id="flush-collapseThree2" class="accordion-collapse collapse" aria-labelledby="flush-headingThree2" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206572/city/menus/TerrazaCB__Bebidas_-02_bfewsb.png" class="img-fluid" alt="terraza citibanamex coma pizza">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFour2">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour2" aria-expanded="false" aria-controls="flush-collapseFour2">
+									fuente
+								</button>
+							</h2>
+							<div id="flush-collapseFour2" class="accordion-collapse collapse" aria-labelledby="flush-headingFour2" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206575/city/menus/TerrazaCB__Bebidas_-03_rkhoua.png" class="img-fluid" alt="terraza citibanamex ouzeria">
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFive2">
+								<button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive2" aria-expanded="false" aria-controls="flush-collapseFive2">
+									Limantour
+								</button>
+							</h2>
+							<div id="flush-collapseFive2" class="accordion-collapse collapse" aria-labelledby="flush-headingFive2" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623206575/city/menus/TerrazaCB__Bebidas_-05_sh1asu.png" class="img-fluid" alt="terraza citibanamex ouzeria">
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center ">
+                            <a class="button-menu" id = "regresar-drinks">Regresar</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end garden drinks -->
+	<!-- ------------------------------------- -->
+	<!-- ------------------------------------- -->
+	<!-- footer -->
+	<footer>
+		<div class="container-fluid justify-content-center">
+			<h2 style="margin-bottom: 100px; margin-top: 100px;">Todos los derechos reservados ®</h2>
+		</div>
+	</footer>
+	<!-- end footer -->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById("drinks").onclick = function() {
+	
+			document.getElementById("menu1").style.display = "none";
+			document.getElementById("gardendrinks").style.display = "block";
+	
+		}
+
+		document.getElementById("alimentos").onclick = function() {
+	
+			document.getElementById("menu1").style.display = "none";
+			document.getElementById("gardenfood").style.display = "block";
+
+}
+
+document.getElementById("regresar-drinks").onclick = function() {
+	
+	document.getElementById("menu1").style.display = "block";
+	document.getElementById("gardendrinks").style.display = "none";
+
+}
+
+document.getElementById("regresar-food").onclick = function() {
+	
+	document.getElementById("menu1").style.display = "block";
+	document.getElementById("gardenfood").style.display = "none";
+
+}
+	}
+	</script>
+</html>
