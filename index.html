@@ -89,8 +89,9 @@
 	#trigo2{
 		width: 20%;
 		transform: translateY(-330px);
-
-		max-height: 100px;
+		max-width: 100px;
+		opacity: 0.3;
+		max-height: auto;
 	}
 
 	#mesas{
@@ -154,28 +155,33 @@
 		}
 		#restaurante1{
 			width: 38%;
-			max-height: 100px;
+			max-width: 100px;
+			max-height: auto;
 		}
 		#restaurante2{
 			width: 60%;
-			max-height: 100px;
+			max-width:125px;
+			max-height: auto;
 		}
 		#restaurante3{
 			margin-top: 15%;
 			width: 52%;
 			height: 44%;
-			max-height: 100px;
+			max-width: 100px;
+			max-height: auto;
 		}
 		#restaurante4{
 			margin-top: 15%;
 			width: 25%;
 			height: 25%;
-			max-height: 100px;
+			max-width: 100px;
+			max-height: auto;
 		}
 		#restaurante5{
 			margin-top: 15%;
 			width: 30%;
-			max-height: 100px;
+			max-width: 100px;
+			max-height: auto;
 		}
 		.button-blue{
 			background-color:#44c8f5;
@@ -341,7 +347,7 @@
 	a: hover{
 		text-decoration: ;
 	}
-		/*end footer*/
+		/*end footer
 	</style>
 </head>
 <body>
@@ -360,7 +366,7 @@
 		<div class="container d-flex justify-content-center">
 			<ul class="nav d-flex justify-content-center">
 				<li class="nav-item border-r">
-					<a class="nav-link active" href="#page-content">Home</a>
+					<a class="nav-link active" href="/">Home</a>
 				</li>
 				<li class="nav-item border-r">
 					<a class="nav-link" href="#hours">Horarios</a>
@@ -433,15 +439,15 @@
 				<div class="container-fluid" data-aos="zoom-in-down" data-aos-duration="400">
 					<div class="row">
 						<div class="col-10 col-md-8 mx-auto">
-							<h1 class ="l-blue-h1 text-center" data-aos="zoom-in-down" data-aos-duration="300">PROPUESTA GASTRONOMICA</h1>
+							<h1 class ="l-blue-h1 text-center text-uppercase" data-aos="zoom-in-down" data-aos-duration="300">PROPUESTA GASTRONóMICA</h1>
 							<h2>10 DE JUNIO</h2>
 							<h2>AL 5 DE SEPTIEMBRE</h2>
 							<h4 class="big">Se contará con la propuesta gastronómica de 5 de los<br> mejores restaurantes de la Ciudad de México.</h4>
 						</div>
 					</div>
 				</div>
-				<div class="container" data-aos="zoom-in-down" data-aos-duration="300" id = "restaurantes">
-					<div class="row text-center">
+				<div class="container mb-5" data-aos="zoom-in-down" data-aos-duration="300" id = "restaurantes">
+					<div class="row text-center align-items-center mb-5">
 						<div class="col-sm-6 col-md-4 col-12 justify-content-center">
 							<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172034/city/bysterraza_hfiukj.png" id="restaurante1">
 						</div>
@@ -468,7 +474,7 @@
 		</section>
 
 		<div class="container-fluid" id = "chefs">
-			<h1 style="text-align:center;" data-aos="zoom-in-down" data-aos-duration="300" class="l-blue-h1">CHEFS INVITADOS</h1>
+			<h1 style="text-align:center;" data-aos="zoom-in-down" data-aos-duration="300" class="l-blue-h1 mb-4">CHEFS INVITADOS</h1>
 			<div class="container-fluid" data-aos="zoom-in-down" data-aos-duration="500">
 				<div class="row">
 					<div class="col-10 col-md-8 mx-auto">
@@ -481,14 +487,14 @@
 					<div class="col-11 col-sm-10 mx-auto">
 						<div class="container-fluid">
 							<div class="row align-items-center">
-								<div class="col-md-7 col-12 mx-auto justify-content-center">
+								<div class="col-md-6 mx-auto col-12 mx-auto justify-content-center">
 									<p class="text-left">
-										Chef Invitado: <blue-p style="color:#44c8f5"></blue-p><br>
+										Chef Invitado: <blue-p style="color:#44c8f5">Alain Fainso</blue-p><br>
 										del 10 al 13 de Junio.<br>
 										Grill and Crudo Bar bu Yoru.
 									</p>
 								</div>
-								<div class="col-md-5 col-12 text-center">
+								<div class="col-md-5 col-12 text-center d-none">
 									<img src="https://res.cloudinary.com/kheperioclud/image/upload/v1623172030/city/terrazaterraza_zjmhcp.png" width="150px" height="150px">
 								</div>	
 							</div>
